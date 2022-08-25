@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+}
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* navbar */
+.navbar{
+    display:flex; 
+    align-items: center;
+    padding: 33px 0px;
+}
+.logo{
+    width: 95px;
+    margin-left: -31rem;
+    margin-top: 25px;
+}
+.list::before {
+    content: "";
+    width: 467px; 
+    height: 2px;
+    margin-top: 10px;
+    background: #333333;
+}
+.list{
+    color: #838383;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content:space-between;
+    list-style: none;
+    margin-left: 2rem;
+}
+.list-item{
+    font-size: 15px;
+    color: #838383;
+    margin-left: 4.8rem;
+}
+.list li:first-child{
+    font-weight: 600;
+    color: #676666;
+    margin-left: 37px;
+}
+.left-container{
+    display: flex;
+    flex-direction: column;
+    background-image: url(./assets/pexels-rfstudio-3819572.jpg);
+    width: 35%;
+    height: 100%;
+    background-size: cover;
+    background-position: bottom;
+}
+
+/* top-section */
+.top-text{
+    display: flex;
+    justify-content: space-evenly;
+}
+.text{
+    font-size: 20px;
+}
+.white-text{
+    font-family: "Merriweather", serif;
+    font-size: 10rem;
+    font-weight: 700;
+    line-height: 0.9;
+    -webkit-text-stroke: 1px;
+    -webkit-text-fill-color: transparent;
+}
+.black-text{
+    font-size: 10rem;
+    font-weight: 700;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke: 1px;
+    line-height: 0.9;
+    margin-left: 12rem;
+    font-family: "Merriweather", serif;
+}
+.mid-text{
+    margin-top: 12rem;
+    font-size: 32px;
+    font-family: "Merriweather", serif;
+    font-weight: 500;
+    color: #8a8a8a;
+}
+.social{
+    line-height: 0.9;
+    margin-bottom: 4rem;
+    padding-left: 10rem;
+    height: 9px;
+}
+.btn-container{
+    margin-right:2rem;
+    margin-top: 2rem;
+    text-align:end;
+}
+.btn{
+    padding: 1rem 5rem;
+    font-size: 20px;
+    font-family: "Merriweather", serif;
+    background-color: #333333;
+    color: #f6f2f0;
+    border: none;
+}
+
+/* bottom-container */
+.bottom-text{
+    display: flex;
+    margin-top: 9rem;
+    justify-content:space-around;
+}
+.bottom-left {
+    display: flex;
+}
+.vertical-line {
+    border-right: 1px solid #9f9e9d;
+    height: 250px;
+    margin-top: -73px;
+    margin-right: 12px;
+}
+.bottom-left ul {
+    margin-top: -87px;
+    font-size: 20px;
+}
+.bottom-left li{
+    padding-bottom: 32px;
+    color: #9f9e9d;
+}
+.bottom-left li:first-child{
+    color: #333333;
+}
+.bottom-middle {
+    width: 281px;
+    margin-top: -70px;
+}
+.bottom-middle p:first-child {
+    font-size: 86px;
+    margin-top: -85px;
+}
+.bottom-middle .data {
+    font-family: "Merriweather", serif;
+    font-size: 20px;
+    margin-top: 17px;
+    font-weight: lighter;
+    color: #222222;
+}
+.bottom-middle img {
+    width: 334px;
+    margin-top: 15px;
+}
+.bottom-right{
+    align-self: center;
+}
+.bottom-right img {
+    height: 8rem;
+}
+
+/* media query  */
+@media only screen and (max-width: 768px) {
+.left-container,.list,.last-text, .bottom-right{
+    display: none;
+}
+.logo{
+    display: inline-block;
+    margin-left: 12px;
+}
+.white-text{
+    font-size: 60px;
+    margin-left: -20px;
+}
+.black-text{
+    font-size: 60px;
+    margin-left: 40px;
+}
+.mid-text{
+    margin-top: 49px;
+    font-size: 24px;
+    margin-left: -53px;
+}
+.btn-container .btn{
+    padding: 10px 16px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.vertical-line{
+    margin-top: 50px;
+    margin-left: 4rem;
+    height: 187px;
+    margin-top: -78px;
+    margin-right: 10px;
+}
+.bottom-left ul {
+    margin-top: -87px;
+    font-size: 15px;
+}
+.bottom-left li{
+    padding-bottom: 25px;
+    color: #9f9e9d;
+}
+.bottom-middle{
+    margin-left: 2rem;
+    padding-top: 19px;
+}
+.bottom-middle p:first-child{
+    font-size: 62px;
+}
+.bottom-middle .data{
+    font-size: 16px;
+}
+.bottom-middle img{
+    height: 282px;
+    width: 100%;
+}
+}
